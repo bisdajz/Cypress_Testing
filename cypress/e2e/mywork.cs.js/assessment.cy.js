@@ -2,6 +2,7 @@ describe('Data Verification - Reversals Total Values', () => {
     it('should verify the accuracy of total values', () => {
       // Visit the login page and login
       cy.visit('https://app.tryloop.ai/login/password');
+      
       cy.wait(3000); // 5000 milliseconds = 5 seconds
 
      cy.get('input[type="text"]').type("ga-engineer-assignment@test.com");  //input[@id=':r1:']
